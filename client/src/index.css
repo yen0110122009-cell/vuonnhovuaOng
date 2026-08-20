@@ -294,3 +294,32 @@ h2 { font-size:clamp(22px,2.2vw,29px); line-height:1; }
 .collection-counter{position:absolute;right:1rem;top:1rem;z-index:12;padding:.42rem .68rem;background:rgba(255,249,229,.88);border:1px solid rgba(165,137,91,.28);border-radius:7px 11px 6px 9px;box-shadow:2px 3px 0 rgba(117,93,52,.1);color:#66745b;font:700 .68rem/1.2 'DM Sans',sans-serif;letter-spacing:.01em;transform:rotate(1deg);backdrop-filter:blur(4px)}
 .collection-counter span{margin:0 .22rem;color:#bd9363}
 @media (max-width:640px){.collection-counter{right:.65rem;top:.65rem;font-size:.6rem;padding:.36rem .5rem}}
+
+
+/* Phiên nhiều đồ vật và Bộ sưu tập âm thanh — giấy thủ công, nhịp chuyển động chậm */
+.multi-keepsake-card { display: grid; gap: .55rem; }
+.keepsake-list { display: grid; gap: .45rem; }
+.keepsake-row { display: grid; grid-template-columns: 2.4rem 1fr auto; align-items: center; gap: .55rem; padding: .45rem .55rem; background: rgba(255,255,255,.5); border: 1px dashed rgba(82,102,77,.25); border-radius: 12px; }
+.keepsake-row.placed { background: rgba(223,234,203,.7); }
+.keepsake-row small { display: block; color: #7b816f; font-size: .72rem; }
+.sound-collection-modal { width: min(680px, calc(100vw - 2rem)); max-height: min(78vh, 720px); overflow: auto; background: #fbf1d9; color: #52664d; border: 1px solid rgba(82,102,77,.22); border-radius: 22px 10px 24px 12px; box-shadow: 0 24px 70px rgba(62,54,36,.2); padding: 1.1rem; }
+.sound-collection-grid { display: grid; gap: .65rem; margin-top: 1rem; }
+.sound-collection-entry { display: grid; grid-template-columns: 2.5rem 1fr auto; align-items: center; gap: .7rem; padding: .7rem .8rem; background: rgba(255,255,255,.54); border: 1px solid rgba(82,102,77,.12); border-radius: 14px; }
+.sound-collection-entry.locked { opacity: .56; filter: saturate(.5); }
+.sound-collection-entry strong, .sound-collection-entry small { display: block; }
+.sound-collection-entry small { margin-top: .18rem; color: #7b816f; font-size: .76rem; }
+.sound-collection-icon { font-size: 1.35rem; text-align: center; }
+.sound-collection-entry button { width: 2rem; height: 2rem; border: 0; border-radius: 50%; background: #dfeacb; color: #52664d; cursor: pointer; }
+.sound-collection-entry button:disabled { cursor: not-allowed; opacity: .45; }
+.sound-collection-count { display: block; margin-top: .9rem; color: #7b816f; }
+.soundbook-button { border-color: rgba(127,155,98,.38); }
+.lucky-bee.bee-reaction-candy { animation: beeCandy 1.8s ease-in-out; }
+.lucky-bee.bee-reaction-wood { animation: beeWood 1.8s ease-in-out; }
+.lucky-bee.bee-reaction-paper { animation: beePaper 1.8s ease-in-out; }
+.lucky-bee.bee-reaction-ribbon { animation: beeRibbon 1.8s ease-in-out; }
+@keyframes beeCandy { 0%,100% { transform: translate(-50%,-50%) rotate(0); } 35% { transform: translate(-50%,-62%) rotate(-12deg) scale(1.12); } 70% { transform: translate(-50%,-44%) rotate(12deg) scale(1.04); } }
+@keyframes beeWood { 0%,100% { transform: translate(-50%,-50%) rotate(0); } 30% { transform: translate(-50%,-50%) rotate(-18deg); } 60% { transform: translate(-50%,-50%) rotate(18deg); } }
+@keyframes beePaper { 0%,100% { transform: translate(-50%,-50%) scale(1); } 45% { transform: translate(-50%,-50%) scale(1.18) rotate(360deg); } }
+@keyframes beeRibbon { 0%,100% { transform: translate(-50%,-50%) rotate(0); } 40% { transform: translate(-50%,-50%) rotate(-25deg) scale(1.1); } 80% { transform: translate(-50%,-50%) rotate(25deg) scale(1.08); } }
+@media (prefers-reduced-motion: reduce) { .lucky-bee[class*="bee-reaction-"] { animation: none; } }
+@media (max-width: 640px) { .sound-collection-modal { padding: .85rem; border-radius: 16px 8px 18px 10px; } .sound-collection-entry { grid-template-columns: 2rem 1fr 1.8rem; padding: .6rem; } .keepsake-row { grid-template-columns: 2rem 1fr auto; } }

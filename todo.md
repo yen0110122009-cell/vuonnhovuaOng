@@ -118,3 +118,10 @@
 - [ ] Thêm bộ đếm trực quan số bong bóng đang bay và tổng sticker đã thu thập.
 - [ ] Tạo âm thanh riêng cho kẹo đường, cúc áo gỗ, ngôi sao giấy và ruy-băng.
 - [ ] Kiểm tra pointer events desktop/mobile, TypeScript và lưu checkpoint mới.
+
+
+## Phiên nhiều đồ vật và Bộ sưu tập âm thanh
+- [ ] Cho phép đặt nhiều món đồ từ ngăn kéo ra mặt bàn cùng lúc, mỗi món giữ vị trí và trạng thái riêng.
+- [ ] Tạo trang Bộ sưu tập âm thanh để nghe lại các hiệu ứng đã mở khóa và hiển thị trạng thái khóa/mở.
+- [ ] Thêm animation riêng cho Bé Ong khi chạm kẹo đường, cúc áo gỗ, ngôi sao giấy và ruy-băng.
+- [ ] Kiểm tra pointer events desktop/mobile, TypeScript và lưu checkpoint mới.
