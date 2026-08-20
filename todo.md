@@ -104,3 +104,10 @@
 - [ ] Thêm giao diện trực quan cho bộ sưu tập hơi trà và chọn hình mặc định.
 - [ ] Ghi timestamp và ghi chú tùy chọn cho từng sự kiện nhật ký tự động.
 - [ ] Kiểm tra TypeScript, desktop/mobile và lưu checkpoint mới.
+
+
+## Phiên âm thanh và đồ vật tương tác
+- [ ] Thêm tiếng lách tách cho từng nhịp Đồng Hồ Cát và hiệu ứng chúc mừng khi hoàn thành.
+- [ ] Cho phép kéo thả món đồ từ Tủ Kéo Bí Mật ra mặt bàn, lưu vị trí và trạng thái tương tác.
+- [ ] Làm bong bóng bay lơ lửng, có thể chọc vỡ bằng Ong và phát tiếng bốp êm.
+- [ ] Kiểm tra pointer events trên desktop/mobile, TypeScript và lưu checkpoint mới.
