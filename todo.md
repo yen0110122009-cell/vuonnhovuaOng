@@ -8,6 +8,13 @@
 - [x] Thêm mùa hiện tại, nhiệm vụ theo mùa và phần thưởng.
 - [x] Kiểm thử thao tác, localStorage, build, responsive và các lỗi console.
 - [ ] Commit và push thay đổi lên repository GitHub đã được người dùng chọn, sau đó tạo checkpoint mới để bàn giao.
+- [x] Thêm ong may mắn bay theo con trỏ/ngón tay, vệt sáng và biểu tượng cỏ bốn lá.
+- [x] Thêm cơ chế thụ phấn làm cây tăng trưởng và tạo Giọt Sương May Mắn.
+- [x] Thêm sticker ong sưu tầm và thông điệp ngẫu nhiên khi nhấp vào ong.
+- [x] Tách thanh trượt âm lượng nhạc nền và hiệu ứng, lưu cùng tiến trình.
+- [x] Chuyển tương tác thú cưng sang pointer events để vuốt chạm mượt trên mobile.
+- [x] Thêm thời tiết nhẹ và màu ánh sáng thay đổi theo thời gian thực.
+- [x] Kiểm thử desktop/mobile, build và cập nhật checkpoint.
 - [x] Viết lớp mở đầu cốt truyện về chìa khóa bí mật và không gian túi riêng tư.
 - [x] Bổ sung chế độ không áp lực: bỏ nhiệm vụ bắt buộc, bảng điểm, đếm ngược và ngôn ngữ thành tích.
 - [x] Theo dõi con trỏ trong khu vườn để thú cưng nhìn theo, đi lại nhẹ hoặc ngủ cạnh vị trí con trỏ.
