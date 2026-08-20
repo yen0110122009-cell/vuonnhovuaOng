@@ -111,3 +111,10 @@
 - [ ] Cho phép kéo thả món đồ từ Tủ Kéo Bí Mật ra mặt bàn, lưu vị trí và trạng thái tương tác.
 - [ ] Làm bong bóng bay lơ lửng, có thể chọc vỡ bằng Ong và phát tiếng bốp êm.
 - [ ] Kiểm tra pointer events trên desktop/mobile, TypeScript và lưu checkpoint mới.
+
+
+## Phiên Ong tương tác với đồ vật và bộ đếm sưu tầm
+- [ ] Cho Ong tự bay đến món đồ đã đặt trên bàn, dừng lại và phản ứng đáng yêu theo từng loại đồ.
+- [ ] Thêm bộ đếm trực quan số bong bóng đang bay và tổng sticker đã thu thập.
+- [ ] Tạo âm thanh riêng cho kẹo đường, cúc áo gỗ, ngôi sao giấy và ruy-băng.
+- [ ] Kiểm tra pointer events desktop/mobile, TypeScript và lưu checkpoint mới.
