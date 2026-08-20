@@ -86,3 +86,11 @@
 - [ ] Thêm Keyboard Flower Sprouter khi người chơi gõ phím.
 - [ ] Thêm Mini Music Box với thao tác vặn dây và âm thanh hộp nhạc.
 - [ ] Kiểm tra typecheck, responsive, lưu checkpoint và đồng bộ tài liệu.
+
+
+## Phiên Ong nhấn giữ và bộ sưu tập ký ức
+- [ ] Chỉ cho Ong di chuyển theo con trỏ khi đang nhấn giữ trên vùng vườn; thả ra thì đứng yên tại vị trí cuối.
+- [ ] Thêm timeline nhật ký theo thời gian với bộ lọc loại hành động.
+- [ ] Bổ sung nhiều giai điệu hộp nhạc và bộ chọn giai điệu đang phát.
+- [ ] Tạo bộ sưu tập hình hơi trà, mở khóa dần qua số lần Tea Time.
+- [ ] Kiểm tra TypeScript, desktop/mobile và lưu checkpoint mới.
