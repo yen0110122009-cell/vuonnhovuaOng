@@ -232,3 +232,19 @@ h2 { font-size:clamp(22px,2.2vw,29px); line-height:1; }
 .tool-button { border-radius:4px 8px 5px 7px; border-style:dashed; background:rgba(255,252,239,.76); }
 .tool-button:hover { background:#edf3d9; transform:translateY(-2px) rotate(-.5deg); }
 @media (max-width:760px) { .top-actions { gap:.25rem; } .top-actions > button, .season-chip, .weather-chip, .day-card { transform:none; } .playfield::after { letter-spacing:.55rem; } }
+
+/* Style note: Nhật ký ngày là một trang giấy mở ra từ góc vườn — lịch nhỏ, chữ dễ đọc, ưu tiên cảm giác lưu niệm hơn dashboard. */
+.journal-button { display:inline-flex; align-items:center; gap:.3rem; color:var(--sage-ink); }
+.daily-journal-modal { width:min(760px,calc(100vw - 2rem)); max-height:min(82vh,760px); overflow:auto; padding:1.25rem; border:1px solid rgba(92,111,76,.24); border-radius:7px 16px 8px 12px; background:#fbf1d9; color:#3e4d3c; box-shadow:0 24px 70px rgba(38,28,20,.28); transform:rotate(-.35deg); }
+.journal-calendar { display:flex; flex-wrap:wrap; gap:.45rem; margin:.8rem 0 1rem; padding:.7rem; border:1px dashed var(--pencil-line); background:rgba(255,250,232,.68); }
+.journal-calendar button { padding:.42rem .62rem; border:1px dashed rgba(92,111,76,.25); border-radius:4px 8px 5px 7px; background:#fffaf0; color:#617157; font-size:.7rem; }
+.journal-calendar button.active { background:var(--clay-sprout); color:#fffaf0; border-color:transparent; transform:rotate(-1deg); }
+.journal-entry { padding:1rem; border-left:4px solid #a8bf83; background:rgba(255,255,255,.38); }
+.journal-entry h2 { margin:.15rem 0 .8rem; font-family:"Fraunces",serif; color:#556b4b; }
+.journal-columns { display:grid; grid-template-columns:1.2fr 1fr 1.2fr; gap:.7rem; }
+.journal-columns > div { padding:.7rem; background:rgba(255,250,232,.7); border:1px dashed rgba(92,111,76,.2); border-radius:5px 10px 6px 8px; font-size:.74rem; }
+.journal-columns b { display:block; margin-bottom:.35rem; color:#687d59; }
+.journal-columns p, .journal-columns ul { margin:.25rem 0 0; color:#7a806f; line-height:1.5; }
+.journal-columns ul { padding-left:1rem; }
+.journal-reward { margin-top:.8rem; padding:.55rem .7rem; background:#edf3d9; color:#657851; font-size:.76rem; }
+@media (max-width:640px) { .journal-button span { display:none; } .daily-journal-modal { padding:.85rem; } .journal-columns { grid-template-columns:1fr; } .journal-calendar { gap:.3rem; } .journal-calendar button { flex:1 0 calc(25% - .3rem); } }

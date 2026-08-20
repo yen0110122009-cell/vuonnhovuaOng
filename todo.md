@@ -8,6 +8,13 @@
 - [x] Thêm mùa hiện tại, nhiệm vụ theo mùa và phần thưởng.
 - [x] Kiểm thử thao tác, localStorage, build, responsive và các lỗi console.
 - [ ] Commit và push thay đổi lên repository GitHub đã được người dùng chọn, sau đó tạo checkpoint mới để bàn giao.
+
+## Phiên nâng cấp tiếp theo
+- [ ] Sửa logic giữ/thả để Ong dừng hoàn toàn khi người chơi giữ nút và chỉ bay lại khi thao tác giữ lần nữa.
+- [ ] Thêm âm thanh chân thực cho lau lá và chuông gió, có điều khiển theo ASMR/SFX.
+- [ ] Tạo trang Nhật ký ngày với lịch chọn ngày, hiển thị cây, thú cưng, lời ước và quà mầm đã lưu.
+- [ ] Kiểm tra trạng thái GitHub, xác thực lại nếu cần và đồng bộ mã nguồn lên repository đã chọn.
+- [ ] Chạy typecheck, kiểm tra responsive, lưu checkpoint và ghi nhận các giới hạn còn lại.
 - [ ] Thêm bụi/giọt sương trên lá, thao tác lau, ánh sáng vỡ và ong hứng năng lượng may mắn.
 - [ ] Thêm chuông gió cỏ bốn lá phản hồi hover và ong xoay theo nhịp.
 - [ ] Thêm góc viết lời ước, lưu theo ngày và cho phép mở lại với dấu mộc may mắn.
