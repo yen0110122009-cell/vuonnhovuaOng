@@ -248,3 +248,29 @@ h2 { font-size:clamp(22px,2.2vw,29px); line-height:1; }
 .journal-columns ul { padding-left:1rem; }
 .journal-reward { margin-top:.8rem; padding:.55rem .7rem; background:#edf3d9; color:#657851; font-size:.76rem; }
 @media (max-width:640px) { .journal-button span { display:none; } .daily-journal-modal { padding:.85rem; } .journal-columns { grid-template-columns:1fr; } .journal-calendar { gap:.3rem; } .journal-calendar button { flex:1 0 calc(25% - .3rem); } }
+
+/* Style note: Các tương tác mới vẫn là những vật nhỏ đặt trên bàn giấy, với chuyển động ngắn và âm thanh dịu; ánh sáng thời gian thực chỉ đổi bầu không khí, không tạo áp lực. */
+.time-chip { display:flex; align-items:center; padding:7px 9px; border:1px dashed rgba(96,124,97,.28); border-radius:7px 10px 6px 8px; background:rgba(255,250,240,.62); color:#71836e; font-size:10px; font-weight:700; }
+.light-morning { filter:saturate(.96) brightness(1.04); }
+.light-daylight { filter:saturate(1.06) brightness(1.08); }
+.light-sunset { filter:saturate(1.08) sepia(.1) brightness(.98); }
+.light-night { filter:saturate(.78) brightness(.82); }
+.garden-shell:has(.light-morning) .garden-art { background-color:rgba(255,223,163,.12); }
+.garden-shell:has(.light-daylight) .garden-art { background-color:rgba(250,205,119,.14); }
+.garden-shell:has(.light-sunset) .garden-art { background-color:rgba(205,122,91,.18); }
+.garden-shell:has(.light-night) .garden-art { background-color:rgba(48,58,91,.2); }
+.keyboard-sprout-trail { position:absolute; inset:18% 8% 8%; pointer-events:none; z-index:1; }
+.keyboard-sprout-trail span { position:absolute; bottom:10%; display:block; font-size:18px; animation:key-sprout 1.8s ease-out both; filter:drop-shadow(0 0 7px rgba(142,192,105,.6)); }
+.tea-corner, .music-box-corner { position:absolute; z-index:5; display:flex; flex-direction:column; align-items:center; gap:2px; }
+.tea-corner { right:12%; bottom:17%; }
+.music-box-corner { left:8%; bottom:12%; }
+.tea-corner button, .music-box-corner button { border:0; background:transparent; cursor:pointer; font-size:34px; filter:drop-shadow(0 5px 5px rgba(75,63,37,.18)); transition:transform .18s ease; }
+.tea-corner button:hover, .music-box-corner button:hover { transform:translateY(-3px) rotate(-3deg); }
+.tea-corner i { position:absolute; top:-1.2rem; left:1rem; color:#8db082; font-style:normal; font-size:22px; animation:tea-steam 1.8s ease-out both; }
+.music-box-corner small { color:#7b806c; font-size:9px; background:rgba(255,250,240,.68); padding:2px 5px; border-radius:4px; }
+.journal-actions { display:flex; justify-content:flex-end; margin:.2rem 0 .7rem; }
+.export-wish { border:0; background:transparent; color:#7b9a62; cursor:pointer; font-weight:700; }
+.export-wish:hover { color:#c8784b; transform:translateY(-1px); }
+@keyframes key-sprout { from { opacity:0; transform:translateY(18px) scale(.55) rotate(-8deg); } 30% { opacity:1; } to { opacity:0; transform:translateY(-30px) scale(1.1) rotate(8deg); } }
+@keyframes tea-steam { from { opacity:0; transform:translateY(8px) scale(.7); } 35% { opacity:1; } to { opacity:0; transform:translateY(-26px) scale(1.1); } }
+@media (max-width:620px) { .time-chip { padding:6px 7px; font-size:9px; } .tea-corner { right:7%; bottom:16%; } .music-box-corner { left:4%; bottom:10%; } .tea-corner button,.music-box-corner button { font-size:28px; } }

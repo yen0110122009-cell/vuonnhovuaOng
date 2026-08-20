@@ -76,3 +76,13 @@
 - [x] Đổi tưới cây sang tương tác từng giọt bằng click, có phản hồi cây lớn lên theo cấp độ.
 - [x] Thêm âm thanh click gỗ, nước, chải lông và nền lofi tùy chọn, tôn trọng mute và prefers-reduced-motion.
 - [x] Kiểm thử desktop/mobile và build; đồng bộ GitHub vẫn chờ kết nối xác thực hợp lệ.
+
+
+## Phiên mở rộng tương tác và nhật ký
+- [ ] Tự động ghi hành động lau lá, rung chuông gió, uống trà, gõ phím và hộp nhạc vào nhật ký ngày.
+- [ ] Đồng bộ ánh sáng và hình nền theo buổi sáng, chiều, tối theo thời gian thực.
+- [ ] Thêm xuất ảnh PNG cho trang nhật ký và từng lời ước.
+- [ ] Thêm Trà Cỏ 4 Lá, hiệu ứng hơi trà và phản ứng của Ong.
+- [ ] Thêm Keyboard Flower Sprouter khi người chơi gõ phím.
+- [ ] Thêm Mini Music Box với thao tác vặn dây và âm thanh hộp nhạc.
+- [ ] Kiểm tra typecheck, responsive, lưu checkpoint và đồng bộ tài liệu.
