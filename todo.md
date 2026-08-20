@@ -132,3 +132,11 @@
 - [ ] Thêm chuỗi phản ứng liên hoàn khi Bé Ong tương tác với nhiều món đồ khác nhau liên tiếp.
 - [ ] Thêm chủ đề âm thanh và bộ lọc trong Bộ sưu tập âm thanh.
 - [ ] Kiểm tra trạng thái localStorage, TypeScript, responsive và lưu checkpoint mới.
+
+
+## Phiên tìm kiếm, chuỗi Ong và chỉnh menu
+- [ ] Thêm thanh tìm kiếm theo tên bài hát/âm thanh trong Bộ sưu tập âm thanh.
+- [ ] Tự động ghi chi tiết từng chuỗi tương tác liên hoàn của Bé Ong vào Nhật ký ngày.
+- [ ] Thêm huy hiệu thành tựu khi chuỗi đạt 3, 5 và 10 món đồ.
+- [ ] Sửa menu “Hôm nay làm gì?” bị rộng, đồng thời liên kết các mục với đúng thao tác/modal.
+- [ ] Kiểm tra GitHub, typecheck, responsive, lưu checkpoint và đồng bộ repository.

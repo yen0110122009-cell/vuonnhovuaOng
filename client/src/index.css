@@ -338,3 +338,15 @@ h2 { font-size:clamp(22px,2.2vw,29px); line-height:1; }
 .bee-chain-badge { display: inline-flex; align-items: center; gap: .35rem; margin-top: .35rem; padding: .28rem .55rem; background: rgba(251, 239, 186, .84); color: #72502a; border-radius: 8px 12px 7px 11px; font-size: .72rem; }
 .bee-chain-badge strong { color: #557447; }
 @media (max-width: 640px) { .tidy-desk-floating { right: .55rem; top: .55rem; font-size: .68rem; padding: .34rem .5rem; } .sound-topic-filters { gap: .3rem; } .sound-topic-filters button { padding: .3rem .48rem; } }
+
+
+/* v18 — menu tác vụ gọn, tìm kiếm âm thanh và huy hiệu chuỗi Ong */
+.tool-drawer { max-width: min(920px, calc(100vw - 30px)); }
+.tool-intro { flex: 0 0 108px; min-width: 108px; }
+.sound-search-input { width: 100%; box-sizing: border-box; border: 1px solid rgba(106,82,49,.22); border-radius: 10px 6px 11px 7px; padding: .62rem .78rem; background: rgba(255,255,255,.68); color: #52664d; outline: none; font: inherit; }
+.sound-search-input:focus { border-color: #78996d; box-shadow: 0 0 0 3px rgba(120,153,109,.16); }
+.bee-achievement-overlay { position: absolute; z-index: 8; top: 14px; left: 50%; transform: translateX(-50%); pointer-events: none; }
+.bee-achievement-overlay strong { display: block; padding: .72rem 1rem; background: rgba(255,248,211,.94); border: 1px solid rgba(205,157,65,.4); border-radius: 12px 8px 14px 9px; color: #6f5527; box-shadow: 0 8px 20px rgba(83,65,31,.16); animation: bee-badge-pop .42s cubic-bezier(.23,1,.32,1); white-space: nowrap; }
+.bee-achievement-overlay small { display: block; margin-top: .18rem; font-weight: 500; color: #7f7454; }
+@keyframes bee-badge-pop { from { opacity: 0; transform: translateY(-8px) rotate(-2deg) scale(.94); } to { opacity: 1; transform: translateY(0) rotate(0) scale(1); } }
+@media (max-width: 620px) { .tool-drawer { max-width: calc(100vw - 18px); } .tool-intro { flex: 0 0 auto; min-width: 0; } .bee-achievement-overlay { top: 10px; max-width: calc(100% - 28px); } .bee-achievement-overlay strong { white-space: normal; text-align: center; font-size: .76rem; } }
