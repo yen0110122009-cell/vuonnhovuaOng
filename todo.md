@@ -94,3 +94,13 @@
 - [ ] Bổ sung nhiều giai điệu hộp nhạc và bộ chọn giai điệu đang phát.
 - [ ] Tạo bộ sưu tập hình hơi trà, mở khóa dần qua số lần Tea Time.
 - [ ] Kiểm tra TypeScript, desktop/mobile và lưu checkpoint mới.
+
+
+## Phiên góc bàn và nhật ký chi tiết
+- [ ] Thêm Đồng Hồ Cát Mầm Cây với preset 15/25 phút, mầm theo hạt sáng và Ong ngủ trong lúc tập trung.
+- [ ] Thêm Cây Cọ Bọt Bóng với kéo để tạo bóng, hiệu ứng vỡ và sticker sưu tầm.
+- [ ] Thêm Tủ Kéo Bí Mật với món đồ thay đổi theo ngày và kéo thả ra bàn.
+- [ ] Thêm bảng điều khiển hộp nhạc hiển thị tên bài và cho phép chọn giai điệu.
+- [ ] Thêm giao diện trực quan cho bộ sưu tập hơi trà và chọn hình mặc định.
+- [ ] Ghi timestamp và ghi chú tùy chọn cho từng sự kiện nhật ký tự động.
+- [ ] Kiểm tra TypeScript, desktop/mobile và lưu checkpoint mới.
