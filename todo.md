@@ -15,6 +15,13 @@
 - [ ] Lưu Polaroid vào localStorage, mở thư viện ảnh và lọc theo Nắng chiều/Mưa dịu/Đêm sao.
 - [ ] Cho phép chọn sticker thay thế cho từng thú cưng và lưu lựa chọn theo theme.
 - [ ] Kiểm thử theme mới, preview, thư viện Polaroid, bộ lọc và sticker thú cưng.
+- [x] Thêm giọt mầm cỏ bốn lá mỗi ngày, click để ong rước về và nhận sticker/thông điệp chữa lành.
+- [x] Thêm xoa đầu ong bằng rê chuột, tim bay và âm thanh rù rì; thêm nút cho ong ăn mật.
+- [x] Thêm hiệu ứng ong đóng dấu lấp lánh sau mỗi lần đặt sticker mới.
+- [x] Thêm nút ASMR riêng cho radio, máy giặt và dụng cụ phục chế theo từng theme.
+- [x] Thêm xuất từng Polaroid đã lưu thành PNG tải về máy bằng canvas/blob.
+- [x] Thêm ambience riêng cho laundromat, cosmic-radio và restoration, có fallback nhẹ.
+- [x] Kiểm thử quà tặng, chăm ong, theme controls, export PNG, audio và build.
 - [x] Mở rộng ThemeKey cho Scrapbook, Claymation, Terrarium, Diorama Gỗ, Tách Trà Matcha và Vải Nỉ.
 - [x] Tạo bộ chọn theme toàn màn hình có mô tả và lưu lựa chọn bằng localStorage.
 - [x] Thêm hiệu ứng riêng: băng dính/stamp, squishy, xoay terrarium, bóng đèn diorama, hơi trà và nút vải.
