@@ -8,6 +8,13 @@
 - [x] Thêm mùa hiện tại, nhiệm vụ theo mùa và phần thưởng.
 - [x] Kiểm thử thao tác, localStorage, build, responsive và các lỗi console.
 - [ ] Commit và push thay đổi lên repository GitHub đã được người dùng chọn, sau đó tạo checkpoint mới để bàn giao.
+- [x] Thời tiết chuyển giữa nắng chiều, mưa dịu và đêm sao chỉ để đổi không khí; cây không héo hoặc mất tiến trình.
+- [x] Thêm giọt sương tương tác khi mưa, cỏ rung và hiệu ứng xột xạc dịu tai, tưới cây tạo giọt kim tuyến và lá rung.
+- [x] Thêm nút máy ảnh, khung Polaroid, ghi chú ngày và gắn sticker vào ảnh kỷ niệm.
+- [x] Hoàn thiện kéo-thả sticker bằng pointer capture trên điện thoại và lưu vị trí bền vững.
+- [x] Thêm preset Pomodoro 25/5 và 50/10, giữ trạng thái ong ngủ khi đang tập trung.
+- [x] Thêm lời chúc riêng cho Cáo Cỏ và biểu cảm khi nhấp Thỏ Bông.
+- [x] Kiểm thử thời tiết, Polaroid, ASMR, touch drag, Pomodoro và build.
 - [x] Thêm 4 cây kỳ ảo với hiệu ứng riêng: cỏ bốn lá, hoa mây, nấm đêm sao và bụi trà lofi.
 - [x] Thêm Mèo Mây Matcha, Cáo Cỏ Nhút Nhát và Thỏ Bông Ngủ Gật với hành vi và thông điệp riêng.
 - [x] Mở sổ sticker popup hiển thị toàn bộ sticker và thông điệp ong đã thu thập.

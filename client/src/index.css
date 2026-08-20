@@ -85,3 +85,35 @@ h2 { font-size:clamp(22px,2.2vw,29px); line-height:1; }
 @keyframes bee-sleep { 0%,100% { transform:translate(-50%,-50%) rotate(-8deg) scale(.95); } 50% { transform:translate(-50%,calc(-50% + 4px)) rotate(6deg) scale(.98); } }
 @media (max-width: 900px) { .game-layout { grid-template-columns:1fr; padding-bottom:154px; } .side-panel { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); padding-top:0; } .refuge-sheet { grid-column:1/-1; } .resource-strip,.volume-sheet,.pomodoro-card { grid-column:span 1; } .playfield { min-height:510px; } }
 @media (max-width: 620px) { .topbar { align-items:flex-start; padding:17px 15px 8px; } .top-actions { flex-wrap:wrap; justify-content:flex-end; max-width:190px; gap:5px; } .season-chip,.weather-chip,.sound-toggle,.sticker-book-button,.day-card { padding:6px 8px; font-size:9px; } .brand-mark { width:42px; height:42px; border-radius:12px 9px 12px 8px; } .brand-mark img { width:37px; height:37px; } h1 { font-size:25px; } .game-layout { padding:5px 13px 157px; gap:14px; } .playfield { min-height:435px; padding-top:27px; } .welcome-note { max-width:80%; font-size:10px; } .plots-row { width:300px; grid-template-columns:repeat(2,140px); gap:10px; margin:66px 0 0 21px; } .plot { height:125px; } .plot-soil { height:60px; } .plant-fantasy { font-size:37px; } .garden-pets { left:23%; bottom:0; transform:scale(.85); transform-origin:left bottom; } .fox-hotspot { right:70px; top:92px; } .side-panel { grid-template-columns:1fr; } .resource-strip,.volume-sheet,.pomodoro-card { grid-column:auto; } .tool-drawer { bottom:9px; width:calc(100% - 18px); gap:4px; padding:7px; overflow-x:auto; } .tool-intro,.tool-tip { display:none; } .tool-button { min-width:76px; flex:0 0 76px; flex-direction:column; align-items:center; gap:2px; padding:7px 4px; text-align:center; } .tool-button span:not(.tool-icon) { font-size:9px; } .tool-button small { margin-left:0; font-size:7px; max-width:68px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; } .collection-grid { grid-template-columns:repeat(2,1fr); } .collection-popover { bottom:83px; } .seed-popover,.decor-popover { margin-left:0; } .sticker-book-grid { grid-template-columns:1fr; } .sticker-book-modal { padding:16px; } .placed-sticker { font-size:19px; } .reset-save { bottom:2px; right:4px; } }
+
+/* Style note: Giữ ngôn ngữ giấy thủ công, ánh sáng dịu và tương tác có nhịp thở; không biến khu vườn thành dashboard. */
+.weather-layer { position:absolute; inset:0; pointer-events:none; overflow:hidden; border-radius:32px; transition:background .7s ease, opacity .7s ease; }
+.weather-layer.weather-warm { background:radial-gradient(circle at 75% 12%, rgba(255,198,104,.28), transparent 32%); }
+.weather-layer.weather-rain { background:linear-gradient(145deg, rgba(133,164,174,.08), rgba(100,137,154,.16)); }
+.weather-layer.weather-night { background:radial-gradient(circle at 70% 18%, rgba(113,105,174,.22), rgba(36,59,77,.18) 48%, transparent 72%); }
+.weather-sun { position:absolute; right:16%; top:12%; color:#e6a95b; font-size:2.5rem; opacity:.55; }
+.weather-stars { position:absolute; right:10%; top:18%; color:#d9e99d; letter-spacing:.7rem; opacity:.75; }
+.rain-mist { position:absolute; inset:0; color:rgba(129,162,169,.36); font-size:1.8rem; letter-spacing:1.2rem; line-height:4rem; padding:5rem 2rem; animation:rain-drift 7s linear infinite; }
+.weather-switcher { position:absolute; z-index:8; right:1rem; top:1rem; display:flex; gap:.35rem; padding:.32rem; background:rgba(255,250,237,.72); border:1px solid rgba(121,93,65,.18); border-radius:999px; box-shadow:0 8px 18px rgba(90,67,47,.08); }
+.weather-switcher button, .pomodoro-presets button { border:0; background:transparent; color:#55705b; font:600 .68rem/1 inherit; padding:.38rem .55rem; border-radius:999px; transition:background .18s ease, transform .18s ease; }
+.weather-switcher button.active, .pomodoro-presets button.active { background:#d9e99d; color:#35563d; }
+.weather-switcher button:active, .pomodoro-presets button:active { transform:scale(.96); }
+.dew-drop { position:absolute; z-index:9; border:0; background:rgba(235,250,245,.82); border-radius:50%; padding:.35rem; box-shadow:0 0 0 5px rgba(194,232,218,.18), 0 6px 12px rgba(63,111,97,.16); animation:dew-breathe 2.4s ease-in-out infinite; }
+.placed-sticker { z-index:12; user-select:none; cursor:grab; transition:transform .16s ease; }
+.placed-sticker:active { cursor:grabbing; transform:scale(1.16) rotate(-4deg); }
+.camera-button { border:0; background:rgba(255,251,241,.76); border-radius:12px; padding:.5rem .6rem; box-shadow:0 5px 12px rgba(75,63,48,.08); }
+.polaroid-modal { width:min(430px, calc(100vw - 2rem)); padding:1.1rem; border-radius:18px 14px 22px 13px; background:#f8eedb; box-shadow:0 22px 60px rgba(50,40,30,.25); transform:rotate(-1deg); }
+.polaroid-frame { margin:.7rem auto; width:min(260px, 76%); padding:.65rem .65rem 1rem; background:#fffdf5; box-shadow:0 8px 16px rgba(65,49,38,.13); }
+.polaroid-scene { min-height:150px; display:grid; place-items:center; align-content:center; gap:.5rem; background:linear-gradient(155deg,#dce9c9,#f4d9b4); color:#4c704a; font-size:3rem; }
+.polaroid-scene span { font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; }
+.polaroid-frame p { margin:.7rem .15rem 0; color:#66705f; font:italic .86rem/1.4 Georgia, serif; }
+.polaroid-modal textarea { width:100%; min-height:64px; resize:vertical; border:1px dashed #b8a887; border-radius:10px; padding:.7rem; color:#566553; background:#fffaf0; font:inherit; }
+.polaroid-sticker-picker { display:flex; flex-wrap:wrap; gap:.35rem; margin:.65rem 0; }
+.polaroid-sticker-picker button { border:1px solid transparent; background:#fffaf0; border-radius:10px; padding:.35rem; font-size:1.2rem; }
+.polaroid-sticker-picker button.active { border-color:#91ad65; background:#e8f0c9; transform:rotate(-4deg); }
+.pomodoro-presets { display:flex; gap:.2rem; margin-left:auto; }
+.pomodoro-presets button { padding:.28rem .42rem; font-size:.62rem; }
+@keyframes rain-drift { from { transform:translateY(-1rem); } to { transform:translateY(1rem); } }
+@keyframes dew-breathe { 0%,100% { transform:translateY(0) scale(1); } 50% { transform:translateY(-4px) scale(1.06); } }
+@media (max-width: 640px) { .weather-switcher { left:.75rem; right:auto; top:.75rem; } .weather-switcher button { font-size:.6rem; padding:.34rem .42rem; } .polaroid-modal { max-height:88vh; overflow:auto; } .pomodoro-presets { order:4; width:100%; margin:0; } .pomodoro-card { flex-wrap:wrap; } }
+@media (prefers-reduced-motion: reduce) { .rain-mist, .dew-drop { animation:none; } }
