@@ -50,3 +50,38 @@ h2 { font-size:clamp(22px,2.2vw,29px); line-height:1; }
 @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; } }
 @media (max-width:900px) { .game-layout { grid-template-columns:1fr; padding-bottom:150px; } .playfield { min-height:490px; } .side-panel { display:grid; grid-template-columns:1fr 1fr; } .resource-strip { grid-column:1 / -1; } .tool-tip { display:none; } .seed-popover { margin-left:-90px; } .decor-popover { margin-left:60px; } }
 @media (max-width:600px) { .topbar { padding:18px 17px 8px; } .top-actions { gap:4px; } .season-chip { display:none; } .sound-toggle { width:30px; height:30px; } .brand-lockup img { width:39px; height:39px; } h1 { font-size:27px; } .day-card { padding:8px 10px; } .game-layout { padding:5px 15px 160px; } .playfield { min-height:430px; transform:scale(.94); transform-origin:top left; width:106%; } .plots-row { margin:68px 0 0 20px; width:350px; gap:8px; } .plot { height:128px; } .garden-pets { left:28%; bottom:8px; } .side-panel { display:flex; gap:12px; padding-top:0; } .tool-drawer { bottom:10px; width:calc(100% - 20px); gap:4px; padding:7px; } .tool-intro { min-width:0; padding:0 5px; } .tool-intro span { display:none; } .tool-button { flex-direction:column; justify-content:center; gap:2px; padding:8px 3px; text-align:center; } .tool-button small { margin:0; font-size:8px; } .collection-popover { bottom:84px; } .seed-popover,.decor-popover { margin-left:0; } .collection-grid { grid-template-columns:repeat(2,1fr); } .reset-save { display:none; } }
+
+/* Style extension: magical plants, quiet sticker journal, and focus ritual. */
+.weather-chip svg { color: var(--moss); }
+.sticker-book-button { display:flex; align-items:center; gap:5px; border:1px dashed rgba(96,124,97,.35); color:var(--moss); background:rgba(255,250,240,.68); border-radius:9px; padding:8px 9px; font-size:10px; font-weight:700; cursor:pointer; }
+.sticker-book-button:hover { background:#fff3dc; }
+.plant-fantasy { font-size:45px; text-shadow:0 0 12px rgba(229,199,117,.42); }
+.star-mushroom .plant-fantasy { filter:drop-shadow(0 0 12px rgba(111,190,184,.78)); }
+.fox-hotspot { right:104px; top:86px; }
+.fox-hotspot .pet-emoji { font-size:25px; }
+.placed-sticker { position:absolute; z-index:7; transform:translate(-50%,-50%) rotate(-6deg); font-size:22px; cursor:grab; filter:drop-shadow(0 4px 3px rgba(75,55,35,.16)); animation:sticker-float 3.8s ease-in-out infinite; user-select:none; }
+.placed-sticker:active { cursor:grabbing; }
+.pomodoro-card { display:flex; align-items:center; gap:7px; padding:11px 13px; background:rgba(255,250,240,.68); border:1px dashed rgba(96,124,97,.25); border-radius:9px 12px 8px 10px; }
+.pomodoro-card > div { display:flex; flex-direction:column; margin-right:auto; }
+.pomodoro-card .eyebrow { margin-bottom:2px; font-size:8px; }
+.pomodoro-card strong { font:600 23px 'Fraunces',serif; color:var(--clay-dark); letter-spacing:.04em; }
+.pomodoro-card button { width:28px; height:28px; display:grid; place-items:center; border:1px solid #ddc6aa; border-radius:50%; color:var(--clay-dark); background:#fff7e9; cursor:pointer; }
+.pomodoro-card button:hover { background:#ffefd7; }
+.is-focusing .garden-art { filter:saturate(.72) brightness(.88) sepia(.12); }
+.is-focusing .playfield::after { content:""; position:absolute; inset:7% 12% 8% 5%; pointer-events:none; border:1px solid rgba(116,143,104,.12); border-radius:48%; box-shadow:inset 0 0 80px rgba(90,126,92,.08); }
+.bee-sleeping { animation:bee-sleep 3.5s ease-in-out infinite; }
+.bee-sleeping .bee-body { filter:saturate(.7); }
+.modal-veil { position:fixed; inset:0; z-index:25; display:grid; place-items:center; padding:20px; background:rgba(70,68,54,.18); backdrop-filter:blur(5px); }
+.sticker-book-modal { width:min(620px,100%); max-height:min(680px,calc(100vh - 40px)); overflow:auto; padding:22px; background:#fff9eb; border:1px solid #ddcdb2; border-radius:8px 17px 10px 14px; box-shadow:0 24px 70px rgba(54,48,34,.25); transform:rotate(.4deg); }
+.sticker-book-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:15px; }
+.sticker-entry { display:flex; align-items:center; gap:10px; min-height:76px; padding:10px; background:#f6efdf; border:1px dashed rgba(96,124,97,.2); border-radius:8px 12px 7px 10px; }
+.sticker-entry > span { width:45px; text-align:center; font-size:25px; }
+.sticker-entry div { display:grid; gap:3px; }
+.sticker-entry b { font-size:11px; }
+.sticker-entry small { color:#76826e; font-size:10px; line-height:1.35; }
+.sticker-entry.locked { opacity:.48; filter:grayscale(.35); }
+.sticker-hint { display:block; margin-top:13px; color:#8b806f; font-size:10px; text-align:right; }
+@keyframes sticker-float { 0%,100% { transform:translate(-50%,-50%) rotate(-6deg); } 50% { transform:translate(-50%,calc(-50% - 5px)) rotate(3deg); } }
+@keyframes bee-sleep { 0%,100% { transform:translate(-50%,-50%) rotate(-8deg) scale(.95); } 50% { transform:translate(-50%,calc(-50% + 4px)) rotate(6deg) scale(.98); } }
+@media (max-width: 900px) { .game-layout { grid-template-columns:1fr; padding-bottom:154px; } .side-panel { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); padding-top:0; } .refuge-sheet { grid-column:1/-1; } .resource-strip,.volume-sheet,.pomodoro-card { grid-column:span 1; } .playfield { min-height:510px; } }
+@media (max-width: 620px) { .topbar { align-items:flex-start; padding:17px 15px 8px; } .top-actions { flex-wrap:wrap; justify-content:flex-end; max-width:190px; gap:5px; } .season-chip,.weather-chip,.sound-toggle,.sticker-book-button,.day-card { padding:6px 8px; font-size:9px; } .brand-mark { width:42px; height:42px; border-radius:12px 9px 12px 8px; } .brand-mark img { width:37px; height:37px; } h1 { font-size:25px; } .game-layout { padding:5px 13px 157px; gap:14px; } .playfield { min-height:435px; padding-top:27px; } .welcome-note { max-width:80%; font-size:10px; } .plots-row { width:300px; grid-template-columns:repeat(2,140px); gap:10px; margin:66px 0 0 21px; } .plot { height:125px; } .plot-soil { height:60px; } .plant-fantasy { font-size:37px; } .garden-pets { left:23%; bottom:0; transform:scale(.85); transform-origin:left bottom; } .fox-hotspot { right:70px; top:92px; } .side-panel { grid-template-columns:1fr; } .resource-strip,.volume-sheet,.pomodoro-card { grid-column:auto; } .tool-drawer { bottom:9px; width:calc(100% - 18px); gap:4px; padding:7px; overflow-x:auto; } .tool-intro,.tool-tip { display:none; } .tool-button { min-width:76px; flex:0 0 76px; flex-direction:column; align-items:center; gap:2px; padding:7px 4px; text-align:center; } .tool-button span:not(.tool-icon) { font-size:9px; } .tool-button small { margin-left:0; font-size:7px; max-width:68px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; } .collection-grid { grid-template-columns:repeat(2,1fr); } .collection-popover { bottom:83px; } .seed-popover,.decor-popover { margin-left:0; } .sticker-book-grid { grid-template-columns:1fr; } .sticker-book-modal { padding:16px; } .placed-sticker { font-size:19px; } .reset-save { bottom:2px; right:4px; } }

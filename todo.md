@@ -8,6 +8,13 @@
 - [x] Thêm mùa hiện tại, nhiệm vụ theo mùa và phần thưởng.
 - [x] Kiểm thử thao tác, localStorage, build, responsive và các lỗi console.
 - [ ] Commit và push thay đổi lên repository GitHub đã được người dùng chọn, sau đó tạo checkpoint mới để bàn giao.
+- [x] Thêm 4 cây kỳ ảo với hiệu ứng riêng: cỏ bốn lá, hoa mây, nấm đêm sao và bụi trà lofi.
+- [x] Thêm Mèo Mây Matcha, Cáo Cỏ Nhút Nhát và Thỏ Bông Ngủ Gật với hành vi và thông điệp riêng.
+- [x] Mở sổ sticker popup hiển thị toàn bộ sticker và thông điệp ong đã thu thập.
+- [x] Cho phép kéo-thả sticker lên vị trí tùy ý trong giao diện và lưu vị trí.
+- [x] Thêm audio asset thực tế cho tiếng ong và các loop lofi tùy chọn, có fallback Web Audio.
+- [x] Thêm đồng hồ Pomodoro đơn giản, chuyển ong sang trạng thái ngủ khi đang tập trung.
+- [x] Kiểm thử nội dung, âm thanh, kéo-thả, Pomodoro, responsive và build.
 - [x] Thêm ong may mắn bay theo con trỏ/ngón tay, vệt sáng và biểu tượng cỏ bốn lá.
 - [x] Thêm cơ chế thụ phấn làm cây tăng trưởng và tạo Giọt Sương May Mắn.
 - [x] Thêm sticker ong sưu tầm và thông điệp ngẫu nhiên khi nhấp vào ong.
