@@ -8,6 +8,18 @@
 - [x] Thêm mùa hiện tại, nhiệm vụ theo mùa và phần thưởng.
 - [x] Kiểm thử thao tác, localStorage, build, responsive và các lỗi console.
 - [ ] Commit và push thay đổi lên repository GitHub đã được người dùng chọn, sau đó tạo checkpoint mới để bàn giao.
+- [x] Mở rộng ThemeKey cho Scrapbook, Claymation, Terrarium, Diorama Gỗ, Tách Trà Matcha và Vải Nỉ.
+- [x] Tạo bộ chọn theme toàn màn hình có mô tả và lưu lựa chọn bằng localStorage.
+- [x] Thêm hiệu ứng riêng: băng dính/stamp, squishy, xoay terrarium, bóng đèn diorama, hơi trà và nút vải.
+- [x] Giữ tương thích Polaroid, sổ lưu ký, ASMR cỏ/nước, ong pause và sticker thú cưng trong mọi theme.
+- [x] Kiểm thử chuyển theme, mobile, localStorage và build.
+- [x] Thêm bộ chọn theme toàn màn hình và lưu theme hiện tại bằng localStorage.
+- [x] Tạo các theme visual khác nhau, ưu tiên ba phong cách đầu tiên: Papercraft, Tamagotchi pastel và Rainy Midnight Desk.
+- [ ] Lưu Polaroid vào localStorage, hiển thị sổ lưu ký và bộ lọc ảnh theo thời tiết.
+- [x] Thêm công tắc riêng cho ASMR cỏ và ASMR nước.
+- [x] Thêm chế độ giữ ong đứng yên khi nhấn giữ, nhả ra thì bay theo lại.
+- [ ] Cho phép dùng sticker thay thế cho các động vật trong khu vườn.
+- [x] Kiểm thử theme toàn màn hình, Polaroid, ASMR, pointer hold, sticker và responsive.
 - [x] Thời tiết chuyển giữa nắng chiều, mưa dịu và đêm sao chỉ để đổi không khí; cây không héo hoặc mất tiến trình.
 - [x] Thêm giọt sương tương tác khi mưa, cỏ rung và hiệu ứng xột xạc dịu tai, tưới cây tạo giọt kim tuyến và lá rung.
 - [x] Thêm nút máy ảnh, khung Polaroid, ghi chú ngày và gắn sticker vào ảnh kỷ niệm.

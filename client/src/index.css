@@ -117,3 +117,32 @@ h2 { font-size:clamp(22px,2.2vw,29px); line-height:1; }
 @keyframes dew-breathe { 0%,100% { transform:translateY(0) scale(1); } 50% { transform:translateY(-4px) scale(1.06); } }
 @media (max-width: 640px) { .weather-switcher { left:.75rem; right:auto; top:.75rem; } .weather-switcher button { font-size:.6rem; padding:.34rem .42rem; } .polaroid-modal { max-height:88vh; overflow:auto; } .pomodoro-presets { order:4; width:100%; margin:0; } .pomodoro-card { flex-wrap:wrap; } }
 @media (prefers-reduced-motion: reduce) { .rain-mist, .dew-drop { animation:none; } }
+
+/* Theme extension: every visual mode fills the viewport while preserving the quiet garden interaction. */
+.theme-scrapbook .garden-art, .theme-scrapbook .playfield { background-color:#eadbc4; background-image:linear-gradient(135deg,rgba(255,255,255,.42) 25%,transparent 25%),linear-gradient(315deg,rgba(98,132,94,.08) 25%,transparent 25%); background-size:34px 34px; }
+.theme-scrapbook .note-sheet, .theme-scrapbook .tool-drawer { border-radius:4px 8px 5px 7px; border:2px dashed rgba(74,104,73,.35); box-shadow:5px 6px 0 rgba(96,72,49,.12); }
+.theme-claymation .garden-art, .theme-claymation .playfield { background:#f6d8c2; }
+.theme-claymation .plot, .theme-claymation .pet-hotspot, .theme-claymation .note-sheet, .theme-claymation button { border-radius:28px; box-shadow:0 8px 0 rgba(134,86,65,.18), inset 0 2px 0 rgba(255,255,255,.5); }
+.theme-terrarium .garden-art, .theme-terrarium .playfield { background:radial-gradient(circle at 50% 35%,rgba(179,255,216,.28),transparent 43%),linear-gradient(145deg,#c8e7df,#739b9c); }
+.theme-terrarium .playfield { box-shadow:inset 0 0 0 18px rgba(255,255,255,.22), inset 0 0 60px rgba(255,255,255,.52), 0 20px 60px rgba(31,82,76,.2); border:3px solid rgba(255,255,255,.6); }
+.theme-diorama .garden-art, .theme-diorama .playfield { background:linear-gradient(90deg,rgba(88,57,33,.18) 0 8px,transparent 8px 34px),linear-gradient(#c69c70,#9d704c); background-size:34px 100%,100% 100%; }
+.theme-diorama .plot, .theme-diorama .pet-hotspot { filter:drop-shadow(6px 8px 0 rgba(58,36,21,.22)); }
+.theme-matcha .garden-art, .theme-matcha .playfield { background:radial-gradient(ellipse at 50% 85%,#9bb784 0 32%,transparent 33%),linear-gradient(#f6e8d0,#dfc7a2); }
+.theme-matcha .playfield:before { content:""; position:absolute; inset:12% 9% 8%; border-radius:42% 42% 46% 46%; background:rgba(255,255,255,.28); border:12px solid #d7c4a8; box-shadow:inset 0 0 35px rgba(93,74,50,.18),0 15px 25px rgba(93,74,50,.16); pointer-events:none; }
+.theme-felt .garden-art, .theme-felt .playfield { background:#c9d9ba; background-image:radial-gradient(rgba(255,255,255,.27) 1px,transparent 1px); background-size:7px 7px; }
+.theme-felt .note-sheet, .theme-felt .plot, .theme-felt .pet-hotspot { border:2px solid #6c8c61; box-shadow:inset 0 0 0 3px rgba(255,255,255,.25),0 5px 0 rgba(62,91,57,.16); }
+.theme-tamagotchi .garden-art, .theme-tamagotchi .playfield { background:#a9d8cc; image-rendering:pixelated; }
+.theme-tamagotchi .note-sheet, .theme-tamagotchi .tool-drawer { border:3px solid #557f72; border-radius:12px; box-shadow:inset 0 0 0 4px rgba(255,255,255,.28),0 8px 0 rgba(50,82,76,.2); }
+.theme-rainy-desk .garden-art, .theme-rainy-desk .playfield { background:linear-gradient(145deg,rgba(20,32,54,.5),transparent),linear-gradient(#354d6a,#1e2943); }
+.theme-rainy-desk .note-sheet { background:rgba(255,228,174,.94); }
+.theme-papercraft .playfield { perspective:900px; }
+.theme-papercraft .plot, .theme-papercraft .pet-hotspot { transform:rotate(-1deg); box-shadow:7px 9px 0 rgba(74,91,62,.14); }
+.theme-menu { position:absolute; right:5rem; top:3.4rem; z-index:25; display:grid; grid-template-columns:repeat(3,minmax(150px,1fr)); gap:7px; width:min(620px,calc(100vw - 2rem)); padding:10px; background:rgba(255,250,236,.96); border:1px solid rgba(83,101,67,.25); border-radius:18px; box-shadow:0 18px 42px rgba(59,72,46,.18); backdrop-filter:blur(14px); }
+.theme-menu button { display:grid; grid-template-columns:auto 1fr; gap:2px 7px; text-align:left; padding:9px 10px; color:#40543d; background:rgba(255,255,255,.48); border:1px solid transparent; border-radius:11px; }
+.theme-menu button:hover, .theme-menu button.active { border-color:#7c9d6d; background:#eaf1dc; transform:translateY(-1px); }
+.theme-menu button span { grid-row:span 2; font-size:1.25rem; } .theme-menu button b { font-size:.72rem; } .theme-menu button small { font-size:.62rem; color:#6f7b6a; }
+.theme-button, .memory-book-button { min-width:2.35rem; }
+.bee-paused { animation:none !important; filter:drop-shadow(0 0 12px rgba(255,213,85,.7)); }
+.asmr-toggles { display:flex; flex-wrap:wrap; gap:8px; margin-top:7px; font-size:.7rem; color:#6c7965; }
+.asmr-toggles label { display:flex; align-items:center; gap:4px; }
+@media (max-width:760px) { .theme-menu { position:fixed; right:10px; top:64px; grid-template-columns:repeat(2,minmax(130px,1fr)); max-height:70vh; overflow:auto; } .theme-menu button { min-height:50px; } .theme-matcha .playfield:before { inset:14% 5% 10%; } }
