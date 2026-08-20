@@ -146,3 +146,54 @@ h2 { font-size:clamp(22px,2.2vw,29px); line-height:1; }
 .asmr-toggles { display:flex; flex-wrap:wrap; gap:8px; margin-top:7px; font-size:.7rem; color:#6c7965; }
 .asmr-toggles label { display:flex; align-items:center; gap:4px; }
 @media (max-width:760px) { .theme-menu { position:fixed; right:10px; top:64px; grid-template-columns:repeat(2,minmax(130px,1fr)); max-height:70vh; overflow:auto; } .theme-menu button { min-height:50px; } .theme-matcha .playfield:before { inset:14% 5% 10%; } }
+
+/* Theme extensions: cozy laundromat, cosmic radio and vintage restoration. Keep the handmade paper language while making each theme full-screen and tactile. */
+.theme-laundromat {
+  --theme-ink: #453c3b;
+  background: radial-gradient(circle at 78% 18%, rgba(255, 211, 146, .48), transparent 28%), linear-gradient(145deg, #37404b 0%, #6f7d87 44%, #d8b18a 100%);
+}
+.theme-laundromat .playfield { background: linear-gradient(145deg, rgba(45, 54, 65, .96), rgba(111, 126, 135, .72) 58%, rgba(205, 166, 123, .78)); box-shadow: inset 0 0 0 10px rgba(255, 232, 190, .1), inset 0 0 80px rgba(28, 39, 48, .38); }
+.theme-laundromat .playfield::before { content: "🧺  ◌  🫧  ◌  🧺"; position: absolute; inset: auto 6% 7%; color: rgba(255, 230, 194, .52); letter-spacing: 1.5rem; font-size: clamp(1rem, 2.5vw, 1.9rem); pointer-events: none; }
+.theme-laundromat .lucky-bee::after { content: "☔"; position: absolute; top: -1rem; left: .45rem; font-size: 1.1rem; }
+.theme-cosmic-radio { background: radial-gradient(circle at 80% 12%, rgba(180, 147, 255, .32), transparent 25%), linear-gradient(145deg, #11162d, #202852 48%, #493e6c); }
+.theme-cosmic-radio .playfield { background: radial-gradient(circle at 76% 22%, rgba(152, 231, 224, .18), transparent 23%), linear-gradient(145deg, rgba(15, 21, 48, .96), rgba(41, 44, 84, .9)); color: #f2efff; box-shadow: inset 0 0 0 1px rgba(188, 189, 255, .25), inset 0 0 100px rgba(84, 73, 170, .28); }
+.theme-cosmic-radio .playfield::before { content: "✦  ·  ✧  ·  ✦  ·  ✧"; position: absolute; top: 9%; right: 8%; color: #d8ccff; letter-spacing: 1.1rem; opacity: .72; font-size: 1.1rem; pointer-events: none; }
+.theme-cosmic-radio .garden-art::after { content: "🪼  ◌  🪼"; position: fixed; right: 5vw; bottom: 14vh; color: #b5fff4; filter: drop-shadow(0 0 16px rgba(110, 255, 231, .7)); font-size: 2.1rem; opacity: .78; }
+.theme-restoration { background: linear-gradient(145deg, #332a24, #80634c 55%, #d1ac78); }
+.theme-restoration .playfield { background: linear-gradient(135deg, rgba(72, 52, 39, .96), rgba(129, 93, 63, .92)), repeating-linear-gradient(90deg, transparent 0 18px, rgba(255, 223, 164, .06) 19px 20px); color: #fff2d4; box-shadow: inset 0 0 0 9px rgba(223, 179, 111, .11), inset 0 0 70px rgba(25, 17, 13, .45); }
+.theme-restoration .playfield::before { content: "⚙  ·  🧸  ·  ◌  ·  ⚙"; position: absolute; bottom: 8%; left: 7%; color: rgba(255, 215, 143, .55); letter-spacing: 1rem; font-size: 1.3rem; pointer-events: none; }
+.theme-restoration .welcome-note, .theme-cosmic-radio .welcome-note { color: inherit; background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.2); }
+.theme-laundromat .plot, .theme-cosmic-radio .plot, .theme-restoration .plot { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.18); color: inherit; }
+.theme-preview { display: grid; place-items: center; width: 3rem; height: 2.2rem; border-radius: .65rem; border: 2px solid rgba(74, 57, 43, .15); box-shadow: inset 0 -8px 16px rgba(255,255,255,.22); font-size: 1.15rem; overflow: hidden; }
+.preview-paper { background: linear-gradient(135deg, #f3e3bd, #c78658); }
+.preview-pixel { background: linear-gradient(135deg, #a9dcca, #e4a7c4); }
+.preview-rain { background: linear-gradient(135deg, #26324b, #d39a6e); }
+.preview-scrap { background: linear-gradient(135deg, #dfb986, #d56d62); }
+.preview-clay { background: linear-gradient(135deg, #f3ae83, #a9c57f); }
+.preview-glass { background: linear-gradient(135deg, #b1e5dd, #7696bd); }
+.preview-wood { background: linear-gradient(135deg, #956444, #e4bd79); }
+.preview-tea { background: linear-gradient(135deg, #c6dfae, #d69c61); }
+.preview-felt { background: linear-gradient(135deg, #d98c86, #88b8a1); }
+.preview-wash { background: linear-gradient(135deg, #536575, #e3b180); }
+.preview-cosmic { background: linear-gradient(135deg, #141936, #906ed0); }
+.preview-vintage { background: linear-gradient(135deg, #563f31, #d4a76a); }
+.memory-book-modal { width: min(720px, calc(100vw - 2rem)); max-height: min(80vh, 720px); overflow: auto; padding: 1.2rem; border-radius: 1.25rem; background: #f8efd9; color: #34413a; box-shadow: 0 24px 70px rgba(38, 28, 20, .28); }
+.memory-filters { display: flex; flex-wrap: wrap; gap: .45rem; margin: .8rem 0 1rem; }
+.memory-filters button, .pet-sticker-row button { border: 1px solid rgba(85, 69, 49, .18); border-radius: 999px; background: rgba(255,255,255,.48); padding: .4rem .7rem; transition: transform .18s ease, background .18s ease; }
+.memory-filters button.active, .pet-sticker-row button.active { background: #cf7a48; color: white; }
+.memory-filters button:active, .pet-sticker-row button:active { transform: scale(.96); }
+.memory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: .8rem; }
+.saved-polaroid { padding: .65rem .65rem .85rem; background: #fffdf7; box-shadow: 0 8px 18px rgba(62, 47, 33, .14); transform: rotate(-1deg); }
+.saved-polaroid:nth-child(even) { transform: rotate(1.2deg); }
+.saved-polaroid.filter-warm { filter: sepia(.18) saturate(1.12); }
+.saved-polaroid.filter-rain { filter: saturate(.8) hue-rotate(160deg) brightness(.98); }
+.saved-polaroid.filter-night { filter: saturate(.75) hue-rotate(205deg) brightness(.82); background: #e7e7f7; }
+.saved-polaroid .polaroid-scene { min-height: 100px; display: grid; place-items: center; align-content: center; gap: .35rem; background: linear-gradient(145deg, #cce5cd, #f1c69d); font-size: 2rem; }
+.saved-polaroid .polaroid-scene span { font-size: .7rem; font-weight: 700; }
+.saved-polaroid p { margin: .65rem .2rem .2rem; font-family: "Fraunces", serif; }
+.saved-polaroid small { color: #7a766b; }
+.pet-sticker-row { display: grid; gap: .4rem; margin: .75rem 0; font-size: .72rem; color: #81796c; }
+.pet-sticker-row > div { display: flex; gap: .35rem; flex-wrap: wrap; }
+.pet-sticker-row button { padding: .25rem .4rem; font-size: 1rem; }
+@media (max-width: 720px) { .theme-menu { left: .5rem; right: .5rem; width: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: 70vh; overflow: auto; } .memory-book-modal { padding: .85rem; } .memory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: reduce) { .theme-preview, .saved-polaroid, .placed-sticker { transition: none !important; transform: none !important; } }

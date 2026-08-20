@@ -8,6 +8,13 @@
 - [x] Thêm mùa hiện tại, nhiệm vụ theo mùa và phần thưởng.
 - [x] Kiểm thử thao tác, localStorage, build, responsive và các lỗi console.
 - [ ] Commit và push thay đổi lên repository GitHub đã được người dùng chọn, sau đó tạo checkpoint mới để bàn giao.
+- [ ] Thêm theme Tiệm Giặt Đồ Đêm Mùa Mưa với máy giặt xoay, bọt bóng và mèo ngủ trên nắp máy.
+- [ ] Thêm theme Trạm Dò Sóng Vũ Trụ với núm radio, tần số âm thanh và sứa phát sáng ngoài cửa sổ.
+- [ ] Thêm theme Tiệm Sửa Đồ Cổ với thao tác lau bụi, đánh bóng, tra dầu và hamster nhặt ốc vít.
+- [ ] Thêm ảnh preview nhỏ cho từng theme trong bộ chọn giao diện.
+- [ ] Lưu Polaroid vào localStorage, mở thư viện ảnh và lọc theo Nắng chiều/Mưa dịu/Đêm sao.
+- [ ] Cho phép chọn sticker thay thế cho từng thú cưng và lưu lựa chọn theo theme.
+- [ ] Kiểm thử theme mới, preview, thư viện Polaroid, bộ lọc và sticker thú cưng.
 - [x] Mở rộng ThemeKey cho Scrapbook, Claymation, Terrarium, Diorama Gỗ, Tách Trà Matcha và Vải Nỉ.
 - [x] Tạo bộ chọn theme toàn màn hình có mô tả và lưu lựa chọn bằng localStorage.
 - [x] Thêm hiệu ứng riêng: băng dính/stamp, squishy, xoay terrarium, bóng đèn diorama, hơi trà và nút vải.
