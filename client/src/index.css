@@ -197,3 +197,38 @@ h2 { font-size:clamp(22px,2.2vw,29px); line-height:1; }
 .pet-sticker-row button { padding: .25rem .4rem; font-size: 1rem; }
 @media (max-width: 720px) { .theme-menu { left: .5rem; right: .5rem; width: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: 70vh; overflow: auto; } .memory-book-modal { padding: .85rem; } .memory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (prefers-reduced-motion: reduce) { .theme-preview, .saved-polaroid, .placed-sticker { transition: none !important; transform: none !important; } }
+
+/* Style note: các control mới giữ tinh thần papercraft — nét viền chì, nền giấy ấm, chuyển động nhỏ và không gây áp lực thị giác. */
+.wish-card { display:grid; grid-template-columns:auto 1fr auto; gap:.4rem; align-items:center; margin:.65rem 0; padding:.65rem; background:rgba(255,250,232,.72); border:1px dashed rgba(102,126,77,.35); border-radius:12px 8px 14px 9px; color:#66745d; }
+.wish-card input { min-width:0; border:0; border-bottom:1px solid rgba(120,145,94,.35); background:transparent; color:#586550; padding:.3rem; font:inherit; outline:none; }
+.wish-card button, .ghost-button { border:1px solid rgba(105,127,82,.25); border-radius:999px; background:#edf3d9; color:#667b58; padding:.35rem .55rem; font-size:.68rem; }
+.wish-card small { grid-column:2 / -1; color:#8a927c; font-size:.62rem; }
+.doodle-pad { display:block; width:100%; height:160px; margin:.55rem 0; border:1px dashed #b8a887; border-radius:10px; background:repeating-linear-gradient(0deg,rgba(255,255,255,.32) 0 1px,transparent 1px 22px),#fffaf0; cursor:crosshair; touch-action:none; }
+.wish-history { display:flex; flex-wrap:wrap; align-items:center; gap:.4rem; margin:.7rem 0; padding:.65rem; border-left:3px solid #a8bf83; background:rgba(235,242,216,.55); color:#64705c; font-size:.68rem; }
+.wish-history strong { width:100%; font-family:"Fraunces",serif; font-size:.88rem; }
+.wish-history span { padding:.25rem .45rem; border-radius:999px; background:#fffaf0; }
+.theme-volume { display:flex; align-items:center; gap:.3rem; width:100%; margin-top:.35rem; }
+.theme-volume input { flex:1; accent-color:#7d9b63; }
+@media (max-width:640px) { .wish-card { grid-template-columns:auto 1fr; } .wish-card button { grid-column:2; justify-self:start; } .wish-card small { grid-column:1 / -1; } .doodle-pad { height:135px; } }
+
+/* Style Decisions — reviewer pass: translate app chrome into seed labels and pinned scraps; reserve Clay Sprout #C9784B for care actions and progress; deepen the garden as protagonist. */
+:root { --clay-sprout:#c9784b; --sage-ink:#52664d; --pencil-line:rgba(92,111,76,.28); }
+.top-actions > button, .season-chip, .weather-chip, .day-card { border-radius:4px 9px 5px 8px; border:1px dashed var(--pencil-line); background:rgba(255,252,240,.66); box-shadow:2px 3px 0 rgba(88,76,53,.07); transform:rotate(-.7deg); }
+.top-actions > button:hover, .day-card:hover { transform:rotate(.4deg) translateY(-1px); }
+.sound-toggle, .sticker-book-button, .theme-button, .camera-button { color:var(--sage-ink); }
+.camera-button { color:var(--clay-sprout); }
+.brand-lockup h1 { letter-spacing:-.045em; transform:rotate(-1deg); text-shadow:1px 1px 0 rgba(255,255,255,.6); }
+.brand-mark { position:relative; filter:sepia(.08) saturate(1.15); }
+.brand-mark::after { content:"♥"; position:absolute; right:-.2rem; top:-.45rem; color:var(--sage-ink); font-size:.75rem; transform:rotate(-18deg); }
+.playfield { background-image:radial-gradient(circle at 16% 22%,rgba(126,154,91,.14) 0 1px,transparent 1.5px),radial-gradient(circle at 72% 76%,rgba(199,120,75,.12) 0 1px,transparent 1.4px),repeating-linear-gradient(165deg,rgba(255,255,255,.18) 0 1px,transparent 1px 18px); background-size:32px 32px,46px 46px,100% 100%; }
+.playfield::after { content:"·  ·  ·  ·  ·  ·  ·"; position:absolute; left:8%; bottom:8%; color:rgba(111,143,87,.32); letter-spacing:1.1rem; font-size:.8rem; transform:rotate(-8deg); pointer-events:none; }
+.note-sheet, .volume-sheet, .pomodoro-card, .resource-strip { border-radius:5px 12px 6px 10px; border:1px dashed var(--pencil-line); }
+.pet-sheet { transform:rotate(.65deg); }
+.volume-sheet { transform:rotate(-.45deg); }
+.pomodoro-card { transform:rotate(.8deg); }
+.side-panel .note-sheet::before, .side-panel .volume-sheet::before, .side-panel .pomodoro-card::before { content:""; position:absolute; width:34px; height:10px; top:-5px; left:25%; background:rgba(219,184,113,.42); transform:rotate(-4deg); }
+.soft-button, .primary-action { background:var(--clay-sprout); color:#fffaf0; border-color:transparent; box-shadow:0 3px 0 rgba(133,72,40,.2); }
+.stat-bar > span, .plot-progress > span { background:var(--clay-sprout); }
+.tool-button { border-radius:4px 8px 5px 7px; border-style:dashed; background:rgba(255,252,239,.76); }
+.tool-button:hover { background:#edf3d9; transform:translateY(-2px) rotate(-.5deg); }
+@media (max-width:760px) { .top-actions { gap:.25rem; } .top-actions > button, .season-chip, .weather-chip, .day-card { transform:none; } .playfield::after { letter-spacing:.55rem; } }

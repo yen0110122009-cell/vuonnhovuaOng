@@ -8,6 +8,13 @@
 - [x] Thêm mùa hiện tại, nhiệm vụ theo mùa và phần thưởng.
 - [x] Kiểm thử thao tác, localStorage, build, responsive và các lỗi console.
 - [ ] Commit và push thay đổi lên repository GitHub đã được người dùng chọn, sau đó tạo checkpoint mới để bàn giao.
+- [ ] Thêm bụi/giọt sương trên lá, thao tác lau, ánh sáng vỡ và ong hứng năng lượng may mắn.
+- [ ] Thêm chuông gió cỏ bốn lá phản hồi hover và ong xoay theo nhịp.
+- [ ] Thêm góc viết lời ước, lưu theo ngày và cho phép mở lại với dấu mộc may mắn.
+- [ ] Thêm lịch sử nhận quà giọt mầm theo từng ngày trong sổ lưu ký.
+- [ ] Cho phép bật nhiều ambience cùng lúc và điều chỉnh âm lượng riêng theo theme.
+- [ ] Thêm canvas doodle trên Polaroid và đưa nét vẽ vào file PNG xuất ra.
+- [ ] Kiểm thử tương tác mới, localStorage, audio phối kênh, doodle và build.
 - [ ] Thêm theme Tiệm Giặt Đồ Đêm Mùa Mưa với máy giặt xoay, bọt bóng và mèo ngủ trên nắp máy.
 - [ ] Thêm theme Trạm Dò Sóng Vũ Trụ với núm radio, tần số âm thanh và sứa phát sáng ngoài cửa sổ.
 - [ ] Thêm theme Tiệm Sửa Đồ Cổ với thao tác lau bụi, đánh bóng, tra dầu và hamster nhặt ốc vít.

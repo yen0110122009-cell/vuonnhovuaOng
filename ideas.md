@@ -70,3 +70,7 @@ Biểu tượng là một mầm cây mọc từ chậu đất nung bo tròn, v�
 - Garden background: `/manus-storage/vuon-nho-garden_7d49ec97.png`
 - Pet asset sheet: `/manus-storage/vuon-nho-pets_783c085a.png`
 - Brand logo symbol: `/manus-storage/vuon-nho-logo_98aa6ada.png`
+
+## Style Decisions
+
+Phiên bản mở rộng tiếp tục theo hướng **Nắng Trên Luống Đất**: giao diện là một cuốn nhật ký vườn thủ công với giấy kem, gouache dịu, xanh sage và Clay Sprout #C9784B. Theo vòng rà soát gần nhất, các control được diễn giải như nhãn hạt giống, mảnh giấy ghim và dụng cụ làm vườn thay vì chrome SaaS; thanh bên dùng nét chì, tape và góc nghiêng nhẹ; khu vườn có texture chấm/nét vẽ, đường dẫn và các phần thưởng nhỏ để trở thành nhân vật chính. Clay Sprout chỉ dùng cho hành động chăm cây, progress và điểm nhấn cảm xúc. Logo/wordmark cần tiếp tục được phát triển theo hình chậu đất có mầm và lá hình tim, với nét chữ hơi nghiêng, có cảm giác được chạm tay.
