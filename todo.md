@@ -125,3 +125,10 @@
 - [ ] Tạo trang Bộ sưu tập âm thanh để nghe lại các hiệu ứng đã mở khóa và hiển thị trạng thái khóa/mở.
 - [ ] Thêm animation riêng cho Bé Ong khi chạm kẹo đường, cúc áo gỗ, ngôi sao giấy và ruy-băng.
 - [ ] Kiểm tra pointer events desktop/mobile, TypeScript và lưu checkpoint mới.
+
+
+## Phiên dọn bàn và bộ lọc âm thanh
+- [ ] Thêm nút Dọn dẹp để cất tất cả món đồ đang đặt trên mặt bàn về ngăn kéo bí mật.
+- [ ] Thêm chuỗi phản ứng liên hoàn khi Bé Ong tương tác với nhiều món đồ khác nhau liên tiếp.
+- [ ] Thêm chủ đề âm thanh và bộ lọc trong Bộ sưu tập âm thanh.
+- [ ] Kiểm tra trạng thái localStorage, TypeScript, responsive và lưu checkpoint mới.

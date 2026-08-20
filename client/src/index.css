@@ -323,3 +323,18 @@ h2 { font-size:clamp(22px,2.2vw,29px); line-height:1; }
 @keyframes beeRibbon { 0%,100% { transform: translate(-50%,-50%) rotate(0); } 40% { transform: translate(-50%,-50%) rotate(-25deg) scale(1.1); } 80% { transform: translate(-50%,-50%) rotate(25deg) scale(1.08); } }
 @media (prefers-reduced-motion: reduce) { .lucky-bee[class*="bee-reaction-"] { animation: none; } }
 @media (max-width: 640px) { .sound-collection-modal { padding: .85rem; border-radius: 16px 8px 18px 10px; } .sound-collection-entry { grid-template-columns: 2rem 1fr 1.8rem; padding: .6rem; } .keepsake-row { grid-template-columns: 2rem 1fr auto; } }
+
+
+/* Nắng Trên Luống Đất — tidy desk tool, sound topic tabs, and gentle bee combo feedback. */
+.tidy-desk-button { border: 1px solid rgba(106, 82, 49, .22); background: #f4df9a; color: #5a4329; border-radius: 12px 8px 11px 7px; padding: .42rem .7rem; font: 700 .72rem/1.1 var(--font-body, inherit); box-shadow: 0 3px 0 rgba(112, 78, 38, .12); cursor: pointer; transition: transform .18s ease, box-shadow .18s ease, background .18s ease; }
+.tidy-desk-button:hover { transform: translateY(-2px) rotate(-1deg); background: #f8e7b4; box-shadow: 0 5px 0 rgba(112, 78, 38, .12); }
+.tidy-desk-button:active { transform: translateY(1px) rotate(0); box-shadow: 0 1px 0 rgba(112, 78, 38, .12); }
+.tidy-desk-floating { position: absolute; right: 1rem; top: 1rem; z-index: 8; }
+.desk-actions { display: flex; justify-content: flex-end; margin-bottom: .45rem; }
+.sound-topic-filters { display: flex; flex-wrap: wrap; gap: .4rem; margin: .75rem 0 1rem; }
+.sound-topic-filters button { border: 1px dashed rgba(106, 82, 49, .34); background: rgba(255, 248, 224, .72); color: #6d5130; border-radius: 999px 10px 999px 12px; padding: .35rem .62rem; cursor: pointer; font-size: .72rem; }
+.sound-topic-filters button.active { background: #78996d; border-color: #78996d; color: #fffaf0; box-shadow: 0 3px 0 rgba(67, 91, 60, .16); }
+.sound-topic-filters button:active { transform: scale(.97); }
+.bee-chain-badge { display: inline-flex; align-items: center; gap: .35rem; margin-top: .35rem; padding: .28rem .55rem; background: rgba(251, 239, 186, .84); color: #72502a; border-radius: 8px 12px 7px 11px; font-size: .72rem; }
+.bee-chain-badge strong { color: #557447; }
+@media (max-width: 640px) { .tidy-desk-floating { right: .55rem; top: .55rem; font-size: .68rem; padding: .34rem .5rem; } .sound-topic-filters { gap: .3rem; } .sound-topic-filters button { padding: .3rem .48rem; } }
