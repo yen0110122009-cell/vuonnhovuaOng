@@ -140,3 +140,9 @@
 - [ ] Thêm huy hiệu thành tựu khi chuỗi đạt 3, 5 và 10 món đồ.
 - [ ] Sửa menu “Hôm nay làm gì?” bị rộng, đồng thời liên kết các mục với đúng thao tác/modal.
 - [ ] Kiểm tra GitHub, typecheck, responsive, lưu checkpoint và đồng bộ repository.
+
+
+## Phiên sửa bố cục menu theo ảnh tham chiếu
+- [ ] Thu gọn vùng Hôm nay làm gì, loại bỏ khoảng trắng lớn và tránh che khuất khu vườn.
+- [ ] Cho phép menu cuộn ngang/gọn trên mobile, giữ liên kết các nút thao tác.
+- [ ] Kiểm tra desktop/mobile và lưu checkpoint sau khi sửa.

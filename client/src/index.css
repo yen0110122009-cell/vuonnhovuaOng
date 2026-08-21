@@ -350,3 +350,45 @@ h2 { font-size:clamp(22px,2.2vw,29px); line-height:1; }
 .bee-achievement-overlay small { display: block; margin-top: .18rem; font-weight: 500; color: #7f7454; }
 @keyframes bee-badge-pop { from { opacity: 0; transform: translateY(-8px) rotate(-2deg) scale(.94); } to { opacity: 1; transform: translateY(0) rotate(0) scale(1); } }
 @media (max-width: 620px) { .tool-drawer { max-width: calc(100vw - 18px); } .tool-intro { flex: 0 0 auto; min-width: 0; } .bee-achievement-overlay { top: 10px; max-width: calc(100% - 28px); } .bee-achievement-overlay strong { white-space: normal; text-align: center; font-size: .76rem; } }
+
+
+/* Menu fix theo ảnh tham chiếu: Hôm nay làm gì là thanh nhãn công cụ thấp, không tạo panel trắng lớn. */
+.tool-drawer {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: 106px !important;
+  flex-wrap: nowrap !important;
+  align-items: stretch !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+}
+.tool-drawer > .tool-intro,
+.tool-drawer > .tool-button,
+.tool-drawer > .sandglass-presets,
+.tool-drawer > .tea-collection,
+.tool-drawer > .music-box-panel,
+.tool-drawer > .wish-card,
+.tool-drawer > .asmr-switches,
+.tool-drawer > .tool-tip {
+  flex: 0 0 auto !important;
+}
+.tool-drawer > .tool-button {
+  width: 108px;
+  min-width: 108px;
+  min-height: 72px;
+  max-height: 84px;
+}
+.tool-drawer > .tool-intro { width: 112px; min-width:112px; }
+.tool-drawer > .tool-tip { width: 128px; }
+@media (max-width: 980px) {
+  .tool-drawer { max-height: 94px !important; padding: 6px !important; }
+  .tool-drawer > .tool-button { width: 88px; min-width:88px; min-height:68px; max-height:80px; }
+  .tool-drawer > .tool-intro { width: 76px; min-width:76px; }
+  .tool-drawer > .tool-intro span { display:block; font-size:10px; line-height:1.15; }
+}
+@media (max-width: 620px) {
+  .tool-drawer { max-height: 88px !important; bottom: 8px !important; }
+  .tool-drawer > .tool-button { width: 78px; min-width:78px; min-height:64px; max-height:76px; }
+}
