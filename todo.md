@@ -153,3 +153,11 @@
 - [ ] Xác nhận remote đúng repository `yen0110122009-cell/vuonnhovuaOng`.
 - [ ] Đẩy các commit local lên nhánh main và lấy link commit/repository.
 - [ ] Ghi nhận đề xuất theme Lâu Đài Cổ Tích, Gánh Xiếc, Tiền Sử, Cyberpunk và Food Paradise để triển khai ở phiên riêng.
+
+
+## Phiên kiểm tra GitHub Pages và độ ổn định
+- [ ] Kiểm tra GitHub Pages/Actions và xác định URL 404 đang trỏ tới đâu.
+- [ ] Xác minh repository có đủ cấu hình build/deploy cho Pages hay chỉ là mã nguồn.
+- [ ] Rà soát menu Hôm nay làm gì trên preview và các luồng tương tác Bé Ong.
+- [ ] Kiểm tra build production, đường dẫn asset và cấu hình base path nếu cần cho Pages.
+- [ ] Báo cáo link repository, link preview đúng và hướng xử lý Pages 404.

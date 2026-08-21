@@ -206,6 +206,8 @@ function vitePluginStorageProxy(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
+  // GitHub Pages serves this repository below /vuonnhovuaOng/; local Manus preview stays at root.
+  base: process.env.GITHUB_ACTIONS ? "/vuonnhovuaOng/" : "/",
   plugins,
   resolve: {
     alias: {
