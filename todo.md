@@ -146,3 +146,10 @@
 - [ ] Thu gọn vùng Hôm nay làm gì, loại bỏ khoảng trắng lớn và tránh che khuất khu vườn.
 - [ ] Cho phép menu cuộn ngang/gọn trên mobile, giữ liên kết các nút thao tác.
 - [ ] Kiểm tra desktop/mobile và lưu checkpoint sau khi sửa.
+
+
+## Phiên xác minh GitHub và theme mới
+- [ ] Kiểm tra lại trạng thái đăng nhập GitHub CLI và quyền repository.
+- [ ] Xác nhận remote đúng repository `yen0110122009-cell/vuonnhovuaOng`.
+- [ ] Đẩy các commit local lên nhánh main và lấy link commit/repository.
+- [ ] Ghi nhận đề xuất theme Lâu Đài Cổ Tích, Gánh Xiếc, Tiền Sử, Cyberpunk và Food Paradise để triển khai ở phiên riêng.
